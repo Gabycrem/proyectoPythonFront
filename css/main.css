@@ -1,0 +1,75 @@
+/* Fuentes locales */
+@font-face {
+    font-family: 'Agrandir Wide';
+    src: url('../fonts/agrandir-wide_light.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Giaza';
+    src: url('../fonts/giaza.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Agrandir Wide Regular';
+    src: url('../fonts/agrandir-regular.woff2') format('woff2');
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Agrandir Wide Regular', sans-serif;
+  }
+  
+  /* Paleta de colores */
+  :root {
+    --color-primary: #251D3A;
+    --color-secondary: #D66519;
+    --color-background: #F9F7F8;
+  }
+  
+ /* Estilos para el menú de navegación */
+header {
+    background-color: var(--color-primary);
+    padding: 1rem;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .logo {
+    display: inline-block;
+    width: auto;
+    height: 5em;
+    vertical-align: middle;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-family: 'Agrandir Wide', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: var(--color-white);
+  }
+  
+  .nav-links a:hover {
+    color: var(--color-secondary);
+  }
+  
+
+  
