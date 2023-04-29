@@ -1,0 +1,28 @@
+h1{
+    align-self: center;
+    color: #251D3A;
+}
+
+#formContact{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2.5em auto;
+    border: 3px solid #251D3A;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+#butSubmit{
+    width: 200px;
+    margin: 1.5em auto;
+    border: 3px solid #251D3A;
+    border-radius: 1.5em;
+    background-color: #F9F7F8;
+}
+
+#butSubmit:hover{
+    background-color: #251D3A;
+    color: #F9F7F8;
+    transform: scale(1.5);
+}
