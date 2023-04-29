@@ -64,7 +64,7 @@ header {
   
   .nav-links a {
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--color-background);
   }
   
   .nav-links a:hover {
