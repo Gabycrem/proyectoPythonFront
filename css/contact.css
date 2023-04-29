@@ -1,0 +1,44 @@
+*{
+    color: #251D3A;
+}
+
+h1{
+    align-self: center;
+}
+
+#formContact{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2.5em auto;
+    border: 3px solid #251D3A;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+#formContact label{
+    font-weight: bolder;
+}
+
+.inForm{
+    border-radius:0.7em;
+    padding: 0.3em;
+    border: 2px solid #251D3A;
+}
+#formContact input{
+    margin-bottom: 1em;
+}
+
+#butSubmit{
+    width: 200px;
+    margin: 1.5em auto;
+    border: 3px solid #251D3A;
+    border-radius: 1.5em;
+    background-color: #F9F7F8;
+}
+
+#butSubmit:hover{
+    background-color: #251D3A;
+    color: #F9F7F8;
+    transform: scale(1.5);
+}

@@ -1,75 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 /* Fuentes locales */
 @font-face {
-    font-family: 'Agrandir Wide';
-    src: url('../fonts/agrandir-wide_light.woff2') format('woff2');
-  }
-  
-  @font-face {
-    font-family: 'Giaza';
-    src: url('../fonts/giaza.woff2') format('woff2');
-  }
-  
-  @font-face {
-    font-family: 'Agrandir Wide Regular';
-    src: url('../fonts/agrandir-regular.woff2') format('woff2');
-  }
-  
-  /* Estilos generales */
-  body {
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Agrandir Wide Regular', sans-serif;
-  }
-  
-  /* Paleta de colores */
-  :root {
-    --color-primary: #251D3A;
-    --color-secondary: #D66519;
-    --color-background: #F9F7F8;
-  }
-  
- /* Estilos para el menú de navegación */
-header {
-    background-color: var(--color-primary);
-    padding: 1rem;
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .logo {
-    display: inline-block;
-    width: auto;
-    height: 5em;
-    vertical-align: middle;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    font-family: 'Agrandir Wide', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: var(--color-background);
-  }
-  
-  .nav-links a:hover {
-    color: var(--color-secondary);
-  }
-  
+  font-family: 'Agrandir Wide';
+  src: url('../fonts/agrandir-wide_light.woff2') format('woff2');
+}
 
-  
+@font-face {
+  font-family: 'Giaza';
+  src: url('../fonts/giaza.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Agrandir Wide Regular';
+  src: url('../fonts/agrandir-regular.woff2') format('woff2');
+}
+
+/* Estilos generales */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Agrandir Wide Regular', sans-serif;
+}
+
+/* Paleta de colores */
+:root {
+  --color-primary: #251D3A;
+  --color-secondary: #D66519;
+  --color-background: #F9F7F8;
+}
+
+/* Estilos para el Header */
+header {
+  min-height: 15vh;
+  background-color: var(--color-primary);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+} */
+
+.logo {
+  display: inline-block;
+  width: auto;
+  height: 5em;
+  vertical-align: middle;
+}
+
+/* Estilos para el NAV */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  font-family: 'Agrandir Wide', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-background);
+}
+
+/* #navHeader a[href='#']{
+  color: #D66519;
+} */
+
+.nav-links a:hover {
+  color: var(--color-secondary);
+}
+
+.nav-links li:hover {
+  transform: scale(1.2);
+}
+
+/* Estilos para el Main */
+main {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+}
+
+main ul {
+  margin-left: 1.5em;
+}
+
+/* Estilos para el Footer*/
+footer {
+  min-height: 10vh;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+#logoFooter {
+  width: 6.5em;
+}
+
+.iconSocial {
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #333;
+  width: 80%;
+}
+
+.iconSocial a {
+  color: var(--color-background);
+}
+
+.iconSocial a svg {
+  width: 50px;
+}
