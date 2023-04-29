@@ -1,6 +1,9 @@
+*{
+    color: #251D3A;
+}
+
 h1{
     align-self: center;
-    color: #251D3A;
 }
 
 #formContact{
@@ -11,6 +14,19 @@ h1{
     border: 3px solid #251D3A;
     border-radius: 2em;
     padding: 1em;
+}
+
+#formContact label{
+    font-weight: bolder;
+}
+
+.inForm{
+    border-radius:0.7em;
+    padding: 0.3em;
+    border: 2px solid #251D3A;
+}
+#formContact input{
+    margin-bottom: 1em;
 }
 
 #butSubmit{
