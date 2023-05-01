@@ -142,3 +142,139 @@ footer {
 .iconSocial a svg {
   width: 50px;
 }
+
+
+.showcase {
+  width: 100%;
+  height: auto;
+  background: url('../images/showcase4.jpeg');
+  padding: 50px;    
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-size: cover;
+}
+
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #ffffff;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  margin: 10px 0;
+}
+
+.btn:hover{
+  opacity: .6;
+}
+
+.showcase h2,
+.showcase p, 
+.showcase ul 
+{
+  margin-bottom: 10px;
+  color:#241c3b;
+  font-weight: bold;
+
+}
+
+.news-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 10px 0;
+}
+
+.news-cards img {
+  width: 100%;
+  height:180px;
+}
+
+.news-cards h3 {
+  font-size: 20px;
+  margin: 10px 0;;
+}
+
+.news-cards a {
+  padding: 10px 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.news-cards a:hover {
+  text-decoration: underline;
+}
+
+.cards-baner-one {
+  width: 100%;
+  height: 350px;
+  background: url('../images/showcase1.webp');
+  /* margin-bottom: 40px;*/
+  background-size: cover;
+  padding: 50px;    
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-size: cover;
+}
+
+.cards-baner-one content {
+  width: 40%;
+  padding: 90px 0 0 30px;
+  color: #ffffff;
+}
+
+.cards-baner-one p,
+.cards-baner-one h2 {
+  margin: 10px 0 20px 0;
+  color:#ffffff;  
+}
+
+.btn2 {
+  color:#262626;
+}
+
+
+
+.news-cards-noticias {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 10px 0;
+}
+
+.news-cards-noticias img {
+  width: 100%;
+  height:180px;
+}
+
+.news-cards-noticias h3 {
+  font-size: 20px;
+  margin: 10px 0;;
+}
+
+.news-cards-noticias a {
+  padding: 10px 0;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.news-cards-noticias a:hover {
+  text-decoration: underline;
+}
+
+
+
