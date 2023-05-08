@@ -1,15 +1,17 @@
-*{
-    color: #251D3A;
-}
 
-h1{
+#h1FormContact{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    text-align: center;
     align-self: center;
 }
 
 #formContact{
+    color: var(--color-primary);
     display: flex;
     flex-direction: column;
     width: 80%;
+    min-width: 260px;
     margin: 2.5em auto;
     border: 3px solid #251D3A;
     border-radius: 2em;
