@@ -13,7 +13,7 @@ label{
   font-weight: bold;
 }
 
-input[type=text], select, textarea {
+  input[type=text], input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -24,7 +24,7 @@ input[type=text], select, textarea {
     resize: vertical;
     transition:0.5s;
   }
-  input[type=text]:focus, select:focus, textarea:focus{
+  input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus{
     background-color: rgb(221, 214, 240);
   }
   input[type=submit] {
