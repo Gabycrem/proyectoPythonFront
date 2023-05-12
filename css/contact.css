@@ -1,12 +1,16 @@
-
+main{
+    background-color: rgb(241, 239, 247);
+}
 #h1FormContact{
     color: var(--color-primary);
     font-size: 1.5rem;
     text-align: center;
     align-self: center;
+    margin: 1.5rem;
 }
 
 #formContact{
+    background-color: white;
     color: var(--color-primary);
     display: flex;
     flex-direction: column;
@@ -17,6 +21,9 @@
     border: 3px solid #251D3A;
     border-radius: 2em;
     padding: 1em;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 #formContact label{
@@ -27,6 +34,14 @@
     border-radius:0.7em;
     padding: 0.3em;
     border: 2px solid #251D3A;
+    transition: background-color 0.5s ease-in-out;
+}
+.inForm:focus{
+    background-color: rgb(221, 214, 240);
+}
+textarea{
+    min-height: 200px;
+    resize:vertical;
 }
 #formContact input{
     margin-bottom: 1em;
