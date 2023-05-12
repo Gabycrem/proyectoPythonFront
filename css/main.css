@@ -227,11 +227,17 @@ footer p{
 }
 
 .card{
+  padding: 1rem;
   width: 260px;
   min-width: 260px;
   height: 425px;
   display: flex;
   flex-direction: column;
+}
+.card:hover{
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  transform: translateY(-3%);
+  cursor: pointer;
 }
 
 .card img{
