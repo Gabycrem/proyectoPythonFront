@@ -9,7 +9,7 @@ main{
     margin: 1.5rem;
 }
 
-#formContact{
+#formContact, #maps{
     background-color: white;
     color: var(--color-primary);
     display: flex;
