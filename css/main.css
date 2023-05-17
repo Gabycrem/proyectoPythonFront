@@ -346,3 +346,32 @@ footer p{
     height: 380px;
   }
 }
+
+/* Estilos de Estadística */
+
+    /* Separar y AJUSTAR */
+  
+#matchesTable, #standingsTable, #scorersTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+  }
+  
+#matchesTable th, #standingsTable th, #scorersTable th {
+      background-color: #251D3A;
+      color: #D66519;
+      padding: 10px;
+  }
+  
+#matchesTable td, #standingsTable td, #scorersTable td {
+      padding: 10px;
+      border: 1px solid #251D3A;
+      color: #000;
+  }
+  
+#matchesTable tr:nth-child(even), 
+#standingsTable tr:nth-child(even), 
+#scorersTable tr:nth-child(even) {
+      background-color: #f2f2f2;
+  }
+  

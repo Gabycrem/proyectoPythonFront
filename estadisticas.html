@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/api_resultado.js" defer></script>
 </head>
 
 <body>
@@ -32,15 +33,63 @@
   </header>
 
   <main>
-    <h1>Estadísticas</h1>
-    <p>A incluir en esta página:<br>
-      - Estadísticas de equipos<br>
-      - Estadísticas de jugadores<br>
-      - Comparación entre equipos</p>
 
-      
-      
-       
+    <h1>Estadísticas</h1>
+        
+  <!-- PRUEBA DE TODO -->
+  <h3>Próximos Partidos</h3>
+  <div id="matchesTableContainer">
+    <table id="matchesTable">
+        <thead>
+            <tr>
+                <th>Local</th>
+                <th>Visita</th>
+                <th>Fecha</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody id="matchesBody"></tbody>
+    </table>
+</div>
+
+<h3>Grupos</h3>
+<div id="standingsTableContainer">
+    <table id="standingsTable">
+        <thead>
+            <tr>
+                <th>Grupo</th>
+                <th>Equipo</th>
+                <th>Partidos Jugados</th>
+                <th>Puntos</th>
+                <th>Victorias</th>
+                <th>Empates</th>
+                <th>Derrotas</th>
+                <th>Goles a favor</th>
+                <th>Goles en contra</th>
+                <th>Diferencia de goles</th>
+            </tr>
+        </thead>
+        <tbody id="standingsBody"></tbody>
+    </table>
+</div>
+
+<h3>Goleadores</h3>
+<div id="scorersTableContainer">
+    <table id="scorersTable">
+        <thead>
+            <tr>
+                <th>Jugador</th>
+                <th>Equipo</th>
+                <th>Partidos Jugados</th>
+                <th>Goles</th>
+                <th>Asistencias</th>
+            </tr>
+        </thead>
+        <tbody id="scorersBody"></tbody>
+    </table>
+</div>
+
+<!-- FIN PRUEBA DE TODO -->
 
   </main>
 
