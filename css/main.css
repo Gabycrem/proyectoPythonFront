@@ -35,7 +35,13 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-h1,
+h1{
+  font-size: 5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #241c3b;
+  text-align: center;
+  text-transform: uppercase;
+}
 h2 {
   font-size: 5rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -48,6 +54,8 @@ h3 {
   font-size: 1.6em;
   color: #251D3A;
   text-transform: uppercase;
+  margin-top: 5%;
+  margin-left: 2%;
 }
 
 h4 {
@@ -349,28 +357,78 @@ footer p{
 
 /* Estilos de Estadística */
 
-    /* Separar y AJUSTAR */
+    /* Partidos */
   
-#matchesTable, #standingsTable, #scorersTable {
-      width: 100%;
+#matchesTable {
+      width: 40%;
       border-collapse: collapse;
       margin-bottom: 20px;
   }
+
+#matchesTable th {
+    background-color: #251D3A;
+    color: #D66519;
+    padding: 10px;
+}
+
+#matchesTable td {
+  padding: 10px;
+  border: 1px solid #251D3A;
+  color: #000;
+  align-items: center;
+}
+
+  /* Posiciones */
+
+#standingsTableContainer {
+  margin-left: 2%;
+  align-items: center;
+  width: 50%;  
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  border: #241c3b;
+}
+
+#standingsTableContainer th {
+  width: 100%;
+  background-color: #251D3A;
+  color: #D66519;
+  padding: 5px;
+  align-items: center;
+}  
+
+#standingsTableContainer td {
+  padding: 10px;
+  color: #000;
+  align-items: center;
+}
+
+
+  /* Goleadores */
+
+
+#scorersTable {
+    width: 30%;
+    border-collapse: collapse;
+    align-items: center;
+}
+
+#scorersTable th {
+  background-color: #251D3A;
+  color: #D66519;
+  padding: 10px;
+  align-items: center;
   
-#matchesTable th, #standingsTable th, #scorersTable th {
-      background-color: #251D3A;
-      color: #D66519;
-      padding: 10px;
-  }
-  
-#matchesTable td, #standingsTable td, #scorersTable td {
-      padding: 10px;
-      border: 1px solid #251D3A;
-      color: #000;
-  }
-  
+}  
+ 
+#scorersTable td {
+  padding: 10px;
+  color: #000;
+  align-items: center;
+}
+
 #matchesTable tr:nth-child(even), 
-#standingsTable tr:nth-child(even), 
+#standingsTableContainer tr:nth-child(even), 
 #scorersTable tr:nth-child(even) {
       background-color: #f2f2f2;
   }
