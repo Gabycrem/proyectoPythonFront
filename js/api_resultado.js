@@ -1,5 +1,3 @@
-const API_KEY = 'e1f8e53a26c34441b304f58620aff0ff';
-
 function fetchAPI(url) {
     const proxyUrl = 'https://futbolsur.archipielago.digital/proxy.php?url=' + encodeURIComponent(url);
     return fetch(proxyUrl).then(response => response.json());
