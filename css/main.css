@@ -35,13 +35,14 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-h1{
+h1 {
   font-size: 5rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #241c3b;
   text-align: center;
   text-transform: uppercase;
 }
+
 h2 {
   font-size: 5rem;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -49,7 +50,8 @@ h2 {
   text-transform: uppercase;
 }
 
-h3 {
+h3,
+.h3 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.6em;
   color: #251D3A;
@@ -69,6 +71,7 @@ h4 {
   padding-left: 20%;
   padding-right: 20%;
 }
+
 h5,
 h6 {
   font-family: 'Agrandir Wide Regular', sans-serif;
@@ -79,12 +82,12 @@ h6 {
 header {
   min-height: 15vh;
   background-color: var(--color-primary);
-  
+
   display: flex;
   flex-direction: column;
 }
 
-.headerTop{
+.headerTop {
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -110,7 +113,7 @@ header {
   text-transform: uppercase;
 }
 
-.nav-links-icons{
+.nav-links-icons {
   list-style: none;
   display: flex;
   gap: 4vh;
@@ -137,7 +140,7 @@ main {
   min-height: 75vh;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 main ul {
@@ -157,7 +160,7 @@ footer {
   gap: 1em;
 }
 
-footer p{
+footer p {
   text-align: center;
 }
 
@@ -187,7 +190,7 @@ footer p{
   width: 100%;
   height: auto;
   background: linear-gradient(#251D3A, rgba(0, 0, 0, 0.1)), url('../images/showcase4.jpeg');
-  padding: 50px;    
+  padding: 50px;
   margin-bottom: 2px;
   display: flex;
   flex-direction: column;
@@ -211,16 +214,15 @@ footer p{
   margin: 10px 0;
 }
 
-.btn:hover{
+.btn:hover {
   background: var(--color-primary);
   color: #ffffff;
   border-color: #ffffff;
 }
 
 .showcase h2,
-.showcase p, 
-.showcase ul 
-{
+.showcase p,
+.showcase ul {
   text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
@@ -230,34 +232,46 @@ footer p{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 1350px;
   gap: 2em;
-  margin: 1em 2em;
+  margin: 1em auto;
 }
 
-.card{
+.card {
   padding: 1rem;
   width: 260px;
   min-width: 260px;
   height: 425px;
   display: flex;
   flex-direction: column;
+  background-color: white;
+  color: var(--color-primary); 
+  border: 3px solid #251D3A;
+  border-radius: 2em;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.card:hover{
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
   cursor: pointer;
 }
 
-.card img{
+.card img {
   height: 45%;
 }
-.card h3{
+
+.card h3 {
   height: 7.5%;
 }
-.card p{
+
+.card p {
   height: 40%;
 }
-.card a{
+
+.card a {
   height: 7.5%;
 }
 
@@ -290,7 +304,7 @@ footer p{
   background: linear-gradient(#251D3A, #251d3a4b), url('../images/showcase1.webp');
   /* margin-bottom: 40px;*/
   background-size: cover;
-  padding: 50px;    
+  padding: 50px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -308,128 +322,54 @@ footer p{
 .cards-baner-one p,
 .cards-baner-one h2 {
   margin: 10px 0 20px 0;
-  color:#ffffff;  
+  color: #ffffff;
 }
 
 .btn2 {
-  color:#262626;
+  color: #262626;
 
 }
 
 
-@media only screen and (max-width: 768px){
-  .nav-links-icons{
+@media only screen and (max-width: 768px) {
+  .nav-links-icons {
     display: flex;
   }
-  .nav-links{
+
+  .nav-links {
     display: none;
   }
-  h2{
+
+  h2 {
     font-size: 3rem;
   }
 }
 
-@media only screen and (max-width: 560px){
+@media only screen and (max-width: 560px) {
   .headerTop {
     padding: 1rem;
     display: flex;
     flex-direction: column;
   }
-  .logo{
+
+  .logo {
     align-self: flex-start;
   }
-  h2{
+
+  h2 {
     font-size: 2rem;
   }
 }
 
-@media only screen and (max-width: 1217px){
+@media only screen and (max-width: 1217px) {
   .news-cards {
     gap: 2em;
-    margin: 1em 2em;
+    margin: 0;
   }
-  .card{
+
+  .card {
     width: 350px;
     min-width: 260px;
     height: 380px;
   }
 }
-
-/* Estilos de Estadística */
-
-    /* Partidos */
-  
-#matchesTable {
-      width: 40%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-  }
-
-#matchesTable th {
-    background-color: #251D3A;
-    color: #D66519;
-    padding: 10px;
-}
-
-#matchesTable td {
-  padding: 10px;
-  border: 1px solid #251D3A;
-  color: #000;
-  align-items: center;
-}
-
-  /* Posiciones */
-
-#standingsTableContainer {
-  margin-left: 2%;
-  align-items: center;
-  width: 50%;  
-  border-collapse: collapse;
-  margin-bottom: 50px;
-  border: #241c3b;
-}
-
-#standingsTableContainer th {
-  width: 100%;
-  background-color: #251D3A;
-  color: #D66519;
-  padding: 5px;
-  align-items: center;
-}  
-
-#standingsTableContainer td {
-  padding: 10px;
-  color: #000;
-  align-items: center;
-}
-
-
-  /* Goleadores */
-
-
-#scorersTable {
-    width: 30%;
-    border-collapse: collapse;
-    align-items: center;
-}
-
-#scorersTable th {
-  background-color: #251D3A;
-  color: #D66519;
-  padding: 10px;
-  align-items: center;
-  
-}  
- 
-#scorersTable td {
-  padding: 10px;
-  color: #000;
-  align-items: center;
-}
-
-#matchesTable tr:nth-child(even), 
-#standingsTableContainer tr:nth-child(even), 
-#scorersTable tr:nth-child(even) {
-      background-color: #f2f2f2;
-  }
-  
