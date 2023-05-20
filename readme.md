@@ -1,1 +1,1 @@
-Por el momento, para poder ver los datos de la API hay que tener instalada una extensión de Chrome "Moesif Origin & CORS Changer".
+Por inconvenientes con el CORS, tuvimos que armar un proxy alojado en un hosting personal.
