@@ -37,7 +37,7 @@ body {
 
 h1 {
   font-size: 1.5rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Giaza, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #241c3b;
   text-align: center;
   text-transform: uppercase;
@@ -46,14 +46,14 @@ h1 {
 
 h2 {
   font-size: 5rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Agrandir Wide', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 h3,
 .h3 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Agrandir Wide Regular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.6em;
   color: #251D3A;
   text-transform: uppercase;
