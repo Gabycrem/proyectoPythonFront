@@ -1,13 +1,7 @@
 main{
     background-color: rgb(241, 239, 247);
 }
-#h1FormContact{
-    color: var(--color-primary);
-    font-size: 1.5rem;
-    text-align: center;
-    align-self: center;
-    margin: 1.5rem;
-}
+
 
 #formContact, #maps{
     background-color: white;

@@ -1,78 +1,131 @@
 /* Estilos de Estadística */
+main {
+  align-items: center;
+  margin-bottom: 1.5em;
+}
 
-    /* Partidos */
-  
-    #matchesTable {
-        width: 40%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-    }
-  
-  #matchesTable th {
-      background-color: #251D3A;
-      color: #D66519;
-      padding: 10px;
+/* Partidos */
+
+#matchesTable {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#matchesTable th {
+  background-color: #251D3A;
+  color: #D66519;
+  padding: 10px;
+}
+
+#matchesTable td {
+  border: 1px solid #251D3A;
+
+}
+
+.escudos {
+  height: 1.5em;
+  margin-right: 1em;
+}
+
+.bordes {
+  border: 3px solid #251D3A;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Posiciones */
+
+#standingsTableContainer {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#standingsTableContainer th {
+  width: 100%;
+  background-color: #251D3A;
+  color: #D66519;
+  padding: 5px;
+  /* align-items: center; */
+}
+
+#standingsTableContainer td,
+#scorersTable td,
+#matchesTable td {
+  padding: 10px;
+  color: #000;
+
+}
+
+
+/* Goleadores */
+
+
+#scorersTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#scorersTable th {
+  background-color: #251D3A;
+  color: #D66519;
+  padding: 10px;
+
+}
+
+#scorersTableContainer {
+  margin: 1.5em 0;
+}
+
+.descSiglas {
+  text-align: center;
+  width: 80%;
+
+}
+
+
+#matchesTable tr:nth-child(even),
+#standingsTableContainer tr:nth-child(even),
+#scorersTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 710px) {
+  main {
+    margin: 0 2px;
   }
-  
-  #matchesTable td {
-    padding: 10px;
-    border: 1px solid #251D3A;
-    color: #000;
-    align-items: center;
+}
+
+@media only screen and (max-width: 425px) {
+  main {
+    margin-bottom: 1em;
   }
-  
-    /* Posiciones */
-  
-  #standingsTableContainer {
-    margin-left: 2%;
-    align-items: center;
-    width: 50%;  
-    border-collapse: collapse;
-    margin-bottom: 50px;
-    border: #241c3b;
+
+  #matchesBody,
+  .standingsTable th,
+  .standingsBody,
+  #scorersBody {
+    font-size: 12px;
   }
-  
-  #standingsTableContainer th {
-    width: 100%;
-    background-color: #251D3A;
-    color: #D66519;
-    padding: 5px;
-    align-items: center;
-  }  
-  
-  #standingsTableContainer td {
-    padding: 10px;
-    color: #000;
-    align-items: center;
+}
+
+@media only screen and (max-width: 375px) {
+
+  #matchesBody,
+  .standingsTable th,
+  .standingsBody,
+  #scorersBody {
+    font-size: 10px;
   }
-  
-  
-    /* Goleadores */
-  
-  
-  #scorersTable {
-      width: 30%;
-      border-collapse: collapse;
-      align-items: center;
+}
+
+
+@media only screen and (max-width: 346px) {
+
+  #matchesBody,
+  .standingsTable th,
+  .standingsBody,
+  #scorersBody {
+    font-size: 8px;
   }
-  
-  #scorersTable th {
-    background-color: #251D3A;
-    color: #D66519;
-    padding: 10px;
-    align-items: center;
-    
-  }  
-   
-  #scorersTable td {
-    padding: 10px;
-    color: #000;
-    align-items: center;
-  }
-  
-  #matchesTable tr:nth-child(even), 
-  #standingsTableContainer tr:nth-child(even), 
-  #scorersTable tr:nth-child(even) {
-        background-color: #f2f2f2;
-    }
-    
+}

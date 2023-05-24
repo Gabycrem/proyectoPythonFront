@@ -13,9 +13,9 @@ function updateMatches() {
         data.matches.forEach(match => {
             matchesBody.innerHTML += `
                 <tr>
-                    <td><img src="${match.homeTeam.crest}" alt="${match.homeTeam.name}'s crest"  height="25" align="center" />${match.homeTeam.name}</td>
+                    <td><img class="escudos" src="${match.homeTeam.crest}" alt="${match.homeTeam.name}'s crest"   />${match.homeTeam.name}</td>
                     <td>${new Date(match.utcDate).toLocaleDateString()}</td>
-                    <td><img src="${match.awayTeam.crest}" alt="${match.awayTeam.name}'s crest"  height="25" align="center" />${match.awayTeam.name} </td>
+                    <td><img class="escudos" src="${match.awayTeam.crest}" alt="${match.awayTeam.name}'s crest"   />${match.awayTeam.name} </td>
                 </tr>
             `;
         });
@@ -40,6 +40,7 @@ function updateStandings() {
 
             // Crear la tabla para el grupo actual
             const table = document.createElement('table');
+            table.classList.add('standingsTable', 'bordes');
             table.innerHTML = `
                 <thead>
                     <tr>
@@ -58,6 +59,7 @@ function updateStandings() {
 
             // Crear el cuerpo de la tabla y agregar los datos del grupo
             const tbody = document.createElement('tbody');
+            tbody.classList.add('standingsBody');
             group.table.forEach(team => {
                 tbody.innerHTML += `
                     <tr>
