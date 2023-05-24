@@ -46,14 +46,14 @@ h1 {
 
 h2 {
   font-size: 5rem;
-  font-family: 'Agrandir Wide', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Agrandir Wide', Impact,'Arial Narrow Bold', sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 h3,
 .h3 {
-  font-family: 'Agrandir Wide Regular', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Agrandir Wide Regular', Impact,  'Arial Narrow Bold', sans-serif;
   font-size: 1.6em;
   color: #251D3A;
   text-transform: uppercase;
@@ -234,13 +234,13 @@ footer p {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1350px;
-  gap: 2em;
-  margin: 1em auto;
+  gap: 1.3em;
+  margin: 1.5em auto;
 }
 
 .card {
   padding: 1rem;
-  width: 260px;
+  width: 290px;
   min-width: 260px;
   height: 425px;
   display: flex;
@@ -270,6 +270,7 @@ footer p {
 
 .card p {
   height: 40%;
+  font-size: 0.8rem;
 }
 
 .card a {
@@ -331,6 +332,13 @@ footer p {
 
 }
 
+@media only screen and (max-width: 1010px) {
+  .news-cards {
+    gap: 2.5em;
+    /* margin: 0; */
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   .nav-links-icons {
@@ -362,15 +370,13 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 1217px) {
+@media only screen and (max-width: 1239px) {
   .news-cards {
-    gap: 2em;
-    margin: 0;
+    gap: 1.2em;
   }
-
-  .card {
-    width: 350px;
-    min-width: 260px;
-    height: 380px;
+}
+@media only screen and (max-width: 1234px) {
+  .news-cards {
+    gap: 0.9em;
   }
 }
